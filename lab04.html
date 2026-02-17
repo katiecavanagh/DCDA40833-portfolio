@@ -9,6 +9,11 @@
 <body>
 <!-- Navigation: Links to all portfolio pages -->
 <nav>
+<button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="lab02.html">AI Evaluation</a></li>
@@ -28,7 +33,7 @@
 <section>
 <h2>Data Preparation</h2>
 <p> For this lab, I used the Top Baby Names by State dataset, which includes the most popular baby names by state, year, gender, and number of occurrences. When I uploaded the CSV into Tableau Public, it loaded without major errors, but I still had to double-check that each column was in there correctly.
-Tableau automatically recognized State, Gender, and Top Name as text fields, while Year and Occurrences were numeric. I made sure that Occurrences was treated as a measure so it could be counted and compared, and that Year functioned as a continuous timeline for trend analysis. The file imported easily, but I still checked to make sure that the charts displayed the data accurately. 
+Tableau automatically recognized State, Gender, and Top Name as text fields, while Year and Occurrences were numeric. I made sure that Occurrences was treated as a measure so it could be counted and compared, and that Year functioned as a timeline for analysis. The file imported easily, but I still checked to make sure that the charts displayed the data accurately. 
 
 </p>
 
@@ -57,10 +62,33 @@ Before making the Name Popularity Over Time graph, I expected to see more tradit
 <p>
 
 <h3>Surprises and Outliers</h3>
-<p>One thing that stood out to me while creating my visuals was that ​I felt like parts of my graphs were a little hard to read and somewhat confusing at first. Some of the results and overlaps made it difficult to understand what was happening without taking extra time to interpret the data. Even so, after looking more closely, the chart still suggests that girls’ names were historically concentrated around a few dominant choices, while boys’ names were spread across several consistently popular ones. I also had trouble uploading my dashboard to Tableau. I wasn’t sure what was working, but after a few tries, it finally worked, so that was another bug that I ran into. Another interesting thing I saw was that at first, I tried a different data set, but it was in an “xlsx” format, and Tableau and VS Code would not take that data set, so I tried this one, which was a csv, and it worked right away. 
+<p>One thing that stood out to me while creating my visuals was that ​I felt like parts of my graphs were a little hard to read and somewhat confusing. Some of the results and overlaps made it difficult to understand what was happening without taking extra time to interpret the data. Even so, after looking more closely, the chart still suggests that girls’ names were historically concentrated around a few dominant choices, while boys’ names were spread across several consistently popular ones. I also had trouble uploading my dashboard to Tableau. I wasn’t sure what was working, but after a few tries, it finally worked, so that was another bug that I ran into. Another interesting thing I saw was that at first, I tried a different data set, but it was in an “xlsx” format, and Tableau and VS Code would not take that data set, so I tried this one, which was a csv, and it worked right away. 
 
 </p>
 
-<h3> Questions for Further Investigation
-</h3>
-<p>
+<h3> Questions for Further Investigation</h3>
+<p>The unexpected spikes and regional patterns raised several questions that could be explored further:
+What cultural or media influences caused certain names to rise so quickly?
+Why do male names tend to remain more stable than female names? 
+How do cultural demographics and immigration patterns influence the popularity of names listed and not listed? 
+What social trends explain the recent popularity of names like Liam?
+These questions could help explain the social and cultural forces behind naming trends.
+</p>
+
+<h3> Tool Evaluation</h3>
+<p>Overall, Tableau Public was fairly easy to use and made it simple to create clean, professional-looking visuals. The drag-and-drop setup made it easy to experiment with different charts and quickly see patterns in the data. I especially liked how the dashboard allows multiple visuals to work together, making it easier to compare trends over time, geography, and gender in one place.
+
+At the same time, I did run into some limitations. Parts of the graphs were harder to read than I expected, and it sometimes took trial and error to make the visuals feel clear and meaningful. I also just feel like my maps and visuals don't make much sense. They are visually confusing. One limitation is that I had trouble putting the data set in Tableau at first. I had to play around with it for awhile and try different data sets to find a good one to make interesting visuals. 
+Even with these limitations, Tableau is a powerful tool for exploring data and telling a clear visual story.
+
+
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 KATIE CAVANAGH | DCDA 40833 | TCU</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
