@@ -408,6 +408,148 @@ footer a:hover {
 }
 
 /* =========================
+   Animations & Transitions
+   ========================= */
+
+/* --- Keyframes --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* --- Header entrance --- */
+header {
+    animation: fadeIn 0.55s ease both;
+}
+
+/* --- Section entrance (staggered fade-in-up) --- */
+main section {
+    animation: fadeInUp 0.45s ease both;
+}
+
+main section:nth-child(1)  { animation-delay: 0.05s; }
+main section:nth-child(2)  { animation-delay: 0.12s; }
+main section:nth-child(3)  { animation-delay: 0.19s; }
+main section:nth-child(4)  { animation-delay: 0.26s; }
+main section:nth-child(5)  { animation-delay: 0.33s; }
+main section:nth-child(6)  { animation-delay: 0.40s; }
+main section:nth-child(7)  { animation-delay: 0.47s; }
+main section:nth-child(8)  { animation-delay: 0.54s; }
+
+/* --- General link hover transitions --- */
+a {
+    transition: color 0.22s ease, opacity 0.22s ease;
+}
+
+/* Subtle underline grow on inline/footer links */
+footer a,
+main a:not(nav a) {
+    position: relative;
+    display: inline-block;
+}
+
+footer a::after,
+main a:not(nav a)::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 0.25s ease;
+}
+
+footer a:hover::after,
+main a:not(nav a):hover::after {
+    width: 100%;
+}
+
+/* --- Button hover lift & glow --- */
+button:not(.hamburger),
+input[type="submit"],
+input[type="button"],
+.btn {
+    transition: background-color 0.25s ease,
+                transform 0.2s ease,
+                box-shadow 0.25s ease;
+}
+
+button:not(.hamburger):hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Nav link enhanced --- */
+nav a {
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    transform: translateY(-1px);
+}
+
+/* --- Image subtle zoom on hover --- */
+.viz-container img {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.viz-container img:hover {
+    transform: scale(1.025);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Table row hover highlight --- */
+tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+    background-color: #f5eeff !important;
+}
+
+/* --- Portfolio card already has transition; add shadow depth --- */
+.portfolio-card {
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+
+/* --- Framework callout subtle border pulse on hover --- */
+.framework-callout {
+    transition: box-shadow 0.3s ease;
+}
+
+.framework-callout:hover {
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.12);
+}
+
+/* --- Respect reduced-motion preferences (accessibility) --- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* =========================
    Responsive Design (Mobile)
    ========================= */
 @media (max-width: 768px) {
