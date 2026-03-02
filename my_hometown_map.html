@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e313b69a01809289944c6d5cd6d24c43 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e313b69a01809289944c6d5cd6d24c43" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e313b69a01809289944c6d5cd6d24c43 = L.map(
+                "map_e313b69a01809289944c6d5cd6d24c43",
+                {
+                    center: [44.9, -93.3],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e443ce94c7f9c538d4e9a7b0b460971f = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/katiecavanagh/cmm3qosk3004c01s23nsbeang/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoia2F0aWVjYXZhbmFnaCIsImEiOiJjbWx0cW9qY2gwMzgwM2ZxM2hxMzA1dnQ2In0.oYohDpcqD8iM12wy2oH-IQ",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Mapbox",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e443ce94c7f9c538d4e9a7b0b460971f.addTo(map_e313b69a01809289944c6d5cd6d24c43);
+        
+    
+            var marker_63ec2b1a3e165ff758daff03855fbd36 = L.marker(
+                [44.882563, -93.377341],
+                {
+}
+            ).addTo(map_e313b69a01809289944c6d5cd6d24c43);
+        
+    
+            var icon_615d5e7b63de3d4953836044eb7664e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2112d21ebd54f1803d0421d614295105 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2681b71be5b1cdd50cd256e7ba69a120 = $(`<div id="html_2681b71be5b1cdd50cd256e7ba69a120" style="width: 100.0%; height: 100.0%;">         <h4>Edina High School</h4>         <p>High school I went to, cheered at, and met my best friends.</p>         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJ-tGNPaYbyrwZu79PQlmsmXr56wDVHS7kA&s" width="200">         </div>`)[0];
+                popup_2112d21ebd54f1803d0421d614295105.setContent(html_2681b71be5b1cdd50cd256e7ba69a120);
+            
+        
+
+        marker_63ec2b1a3e165ff758daff03855fbd36.bindPopup(popup_2112d21ebd54f1803d0421d614295105)
+        ;
+
+        
+    
+    
+                marker_63ec2b1a3e165ff758daff03855fbd36.setIcon(icon_615d5e7b63de3d4953836044eb7664e7);
+            
+    
+            var marker_e78ae8bc8a31263b7f4f734fcefc0cbb = L.marker(
+                [44.911587, -93.328712],
+                {
+}
+            ).addTo(map_e313b69a01809289944c6d5cd6d24c43);
+        
+    
+            var icon_9afecefc4399ddd07384055ddfb17a7d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c01d70d360ee371d9cf73d08e2309ae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f747be7d25826b04101d8af41e0140e8 = $(`<div id="html_f747be7d25826b04101d8af41e0140e8" style="width: 100.0%; height: 100.0%;">         <h4>AMA Sushi</h4>         <p>Favorite restaurant to go to with my high school friends. Cheap, great service, great food. Cute & quaint.</p>         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzLSCLRzwS-HVTh9nQ6KT1vFlBhUpSq51-mQ&s" width="200">         </div>`)[0];
+                popup_8c01d70d360ee371d9cf73d08e2309ae.setContent(html_f747be7d25826b04101d8af41e0140e8);
+            
+        
+
+        marker_e78ae8bc8a31263b7f4f734fcefc0cbb.bindPopup(popup_8c01d70d360ee371d9cf73d08e2309ae)
+        ;
+
+        
+    
+    
+                marker_e78ae8bc8a31263b7f4f734fcefc0cbb.setIcon(icon_9afecefc4399ddd07384055ddfb17a7d);
+            
+    
+            var marker_2a4830461201c2eb71c148e211ffaab8 = L.marker(
+                [44.911849, -93.302062],
+                {
+}
+            ).addTo(map_e313b69a01809289944c6d5cd6d24c43);
+        
+    
+            var icon_00b46d50cd6a6dafab2bb2e73007a1a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_320a2f6f588fe178c99f842990b32724 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_56b029c8c99fffdaac4b2bc1be1e58f9 = $(`<div id="html_56b029c8c99fffdaac4b2bc1be1e58f9" style="width: 100.0%; height: 100.0%;">         <h4>Mount Olivet Lutheran Church</h4>         <p>Church I grew up in, shaped me into who I am. A place of comfort. Met so many great people and friends.</p>         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfWdpTp-xLnJtTbbv2saT_rEsXuoDfB1RTWg&s" width="200">         </div>`)[0];
+                popup_320a2f6f588fe178c99f842990b32724.setContent(html_56b029c8c99fffdaac4b2bc1be1e58f9);
+            
+        
+
+        marker_2a4830461201c2eb71c148e211ffaab8.bindPopup(popup_320a2f6f588fe178c99f842990b32724)
+        ;
+
+        
+    
+    
+                marker_2a4830461201c2eb71c148e211ffaab8.setIcon(icon_00b46d50cd6a6dafab2bb2e73007a1a5);
+            
+    
+            var marker_e8077ad71cce3930a71dec702317c07f = L.marker(
+                [44.881581, -93.323767],
+                {
+}
+            ).addTo(map_e313b69a01809289944c6d5cd6d24c43);
+        
+    
+            var icon_ee18c455938e40bd960a4279794cb231 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1eacd3bbb0c5d300429c4515ae509eb7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_220ebcff1fdd6685e55af65149bc7b47 = $(`<div id="html_220ebcff1fdd6685e55af65149bc7b47" style="width: 100.0%; height: 100.0%;">         <h4>Lifetime Fitness</h4>         <p>Place I went to workout with friends, tan at the pool, or walk on the treadmill and yap.</p>         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCqCNGAirR5WATA95O1EQmTnTLLpie8FPbdw&s" width="200">         </div>`)[0];
+                popup_1eacd3bbb0c5d300429c4515ae509eb7.setContent(html_220ebcff1fdd6685e55af65149bc7b47);
+            
+        
+
+        marker_e8077ad71cce3930a71dec702317c07f.bindPopup(popup_1eacd3bbb0c5d300429c4515ae509eb7)
+        ;
+
+        
+    
+    
+                marker_e8077ad71cce3930a71dec702317c07f.setIcon(icon_ee18c455938e40bd960a4279794cb231);
+            
+    
+            var marker_2c4f14afa2225548b54e72b32237074e = L.marker(
+                [44.910176, -93.354768],
+                {
+}
+            ).addTo(map_e313b69a01809289944c6d5cd6d24c43);
+        
+    
+            var icon_23dcee4fec7b587807ff1940e9fa5afa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f13644472bbcef1061c8245d70a51f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89c07e62acb83088940770c07a28192b = $(`<div id="html_89c07e62acb83088940770c07a28192b" style="width: 100.0%; height: 100.0%;">         <h4>Jerry's Foods</h4>         <p>My parents practically live at this grocery store. Studying with friends, getting a late-night snack, or picking up something on the way to school.</p>         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgFJObfe4KhuovmxJ5TtEvh4kY9viUdNSFLQ&s" width="200">         </div>`)[0];
+                popup_3f13644472bbcef1061c8245d70a51f4.setContent(html_89c07e62acb83088940770c07a28192b);
+            
+        
+
+        marker_2c4f14afa2225548b54e72b32237074e.bindPopup(popup_3f13644472bbcef1061c8245d70a51f4)
+        ;
+
+        
+    
+    
+                marker_2c4f14afa2225548b54e72b32237074e.setIcon(icon_23dcee4fec7b587807ff1940e9fa5afa);
+            
+    
+            var marker_cbb91b8a79ec346d105635faddee6c40 = L.marker(
+                [44.912135, -93.354687],
+                {
+}
+            ).addTo(map_e313b69a01809289944c6d5cd6d24c43);
+        
+    
+            var icon_97f70a4036e5fec3655ea2477ef2a58a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1cf07870b2e95f8c54cb77f75f668c0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5dc51ee55c2cdc4ac6b457034bd07a21 = $(`<div id="html_5dc51ee55c2cdc4ac6b457034bd07a21" style="width: 100.0%; height: 100.0%;">         <h4>Caribou Coffee</h4>         <p>My favorite midwest coffee place. Super close to my house and my friends and I would go here a lot. Has the best coffee and nice workers.</p>         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXGIvLrSmBk41s-toFI255H7D2mAZF2iLdsA&s" width="200">         </div>`)[0];
+                popup_d1cf07870b2e95f8c54cb77f75f668c0.setContent(html_5dc51ee55c2cdc4ac6b457034bd07a21);
+            
+        
+
+        marker_cbb91b8a79ec346d105635faddee6c40.bindPopup(popup_d1cf07870b2e95f8c54cb77f75f668c0)
+        ;
+
+        
+    
+    
+                marker_cbb91b8a79ec346d105635faddee6c40.setIcon(icon_97f70a4036e5fec3655ea2477ef2a58a);
+            
+    
+            var marker_a35183dc1d00056162dedf1e690c7d14 = L.marker(
+                [44.89871, -93.34869],
+                {
+}
+            ).addTo(map_e313b69a01809289944c6d5cd6d24c43);
+        
+    
+            var icon_cb2d4fc79bcc1aca534f17a4a52637b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c39c84b7fe022fb1d56e3b076bce38d3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2602e2e5df8a5e6a6b8fd93f4bc5cee7 = $(`<div id="html_2602e2e5df8a5e6a6b8fd93f4bc5cee7" style="width: 100.0%; height: 100.0%;">         <h4>Kuhlman Field</h4>         <p>Where all of our football, soccer, and lacrosse games were. I was a cheerleader, so I spent lots of time on the sidelines. Always a fun night at Kuhlman.</p>         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT010aRTGQhcz9jc6o7JVR83YoVEK9r8YKcOg&s" width="200">         </div>`)[0];
+                popup_c39c84b7fe022fb1d56e3b076bce38d3.setContent(html_2602e2e5df8a5e6a6b8fd93f4bc5cee7);
+            
+        
+
+        marker_a35183dc1d00056162dedf1e690c7d14.bindPopup(popup_c39c84b7fe022fb1d56e3b076bce38d3)
+        ;
+
+        
+    
+    
+                marker_a35183dc1d00056162dedf1e690c7d14.setIcon(icon_cb2d4fc79bcc1aca534f17a4a52637b5);
+            
+    
+            var marker_ef55b0cfbf3ee4da54be36161ecf589a = L.marker(
+                [44.94371, -93.326834],
+                {
+}
+            ).addTo(map_e313b69a01809289944c6d5cd6d24c43);
+        
+    
+            var icon_2b4c6fa82f276273cf9893af7059c56a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb713cc9c14a49647358d3ed0a0dbe8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9cec520b0f67203fe3f2b8baa97c555 = $(`<div id="html_d9cec520b0f67203fe3f2b8baa97c555" style="width: 100.0%; height: 100.0%;">         <h4>Minikahda Country Club</h4>         <p>Very grateful to have grew up going here in the summers learning golf, tennis, and swim, meeting lifelong friends. Beautiful view of Lake Calhoun.</p>         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5cSi9_aGvOj58oz7rywxnuC34BCtg9euG6A&s" width="200">         </div>`)[0];
+                popup_eb713cc9c14a49647358d3ed0a0dbe8d.setContent(html_d9cec520b0f67203fe3f2b8baa97c555);
+            
+        
+
+        marker_ef55b0cfbf3ee4da54be36161ecf589a.bindPopup(popup_eb713cc9c14a49647358d3ed0a0dbe8d)
+        ;
+
+        
+    
+    
+                marker_ef55b0cfbf3ee4da54be36161ecf589a.setIcon(icon_2b4c6fa82f276273cf9893af7059c56a);
+            
+    
+            var marker_1772719af6a011847f1567eb51b8b7bd = L.marker(
+                [44.98111, -93.23678],
+                {
+}
+            ).addTo(map_e313b69a01809289944c6d5cd6d24c43);
+        
+    
+            var icon_8b3e02c361fc286e1cd4cd1cd8de1873 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_627d622887215ae4306914a7f7431410 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_449dd07bb199e75b382eb78b2bb6c4a8 = $(`<div id="html_449dd07bb199e75b382eb78b2bb6c4a8" style="width: 100.0%; height: 100.0%;">         <h4>Kollege Klub</h4>         <p>Where all my high school friends gather during breaks from college. Good memories made here, cheap food and drink.</p>         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRHDY6DOqBUPrkwcXXcSUzZ1UpDWZltj6NdQ&s" width="200">         </div>`)[0];
+                popup_627d622887215ae4306914a7f7431410.setContent(html_449dd07bb199e75b382eb78b2bb6c4a8);
+            
+        
+
+        marker_1772719af6a011847f1567eb51b8b7bd.bindPopup(popup_627d622887215ae4306914a7f7431410)
+        ;
+
+        
+    
+    
+                marker_1772719af6a011847f1567eb51b8b7bd.setIcon(icon_8b3e02c361fc286e1cd4cd1cd8de1873);
+            
+</script>
+</html>
