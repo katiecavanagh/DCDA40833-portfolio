@@ -7,7 +7,7 @@
    CSS Variables (Color Scheme)
    ========================= */
 :root {
-    --primary-color: #185825;      /* Dark Green (land) */
+    --primary-color: #c062a5;      /* Dark Green (land) */
     --secondary-color: #d1ead3;    /* Light Green (land) */
     --accent-color: #8e0b0b;       /* Dark Red (roads) */
     --text-color: #333;            /* Dark gray for text */
